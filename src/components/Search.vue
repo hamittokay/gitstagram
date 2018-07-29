@@ -58,11 +58,8 @@ export default {
       this.loading = true
       this.$http.get(`users/${this.search}`)
         .then(res => {
-          console.log(res)
           if (res.status === 200) {
             this.user = res.data
-          } else if (res.status === 404) {
-            
           }
         })
         .catch(err => {
@@ -75,7 +72,6 @@ export default {
         .finally(() => {
           this.loading = false
         })
-      this.user = null
     }
   }
 }
