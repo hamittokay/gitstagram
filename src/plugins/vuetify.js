@@ -2,7 +2,7 @@ import Vue from 'vue'
 import {
   Vuetify,
   VApp,
-  VNavigationDrawer,
+  VAlert,
   VFooter,
   VList,
   VBtn,
@@ -10,14 +10,17 @@ import {
   VIcon,
   VGrid,
   VToolbar,
-  transitions
+  transitions,
+  VProgressLinear,
+  VCard,
+  VDivider,
 } from 'vuetify'
 import 'vuetify/src/stylus/app.styl'
 
 Vue.use(Vuetify, {
   components: {
     VApp,
-    VNavigationDrawer,
+    VAlert,
     VFooter,
     VList,
     VBtn,
@@ -25,6 +28,9 @@ Vue.use(Vuetify, {
     VIcon,
     VGrid,
     VToolbar,
+    VProgressLinear,
+    VCard,
+    VDivider,
     transitions
   },
 })

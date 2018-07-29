@@ -6,7 +6,7 @@
       color="black"
       :clipped-left="clipped"
     >
-    <v-toolbar-title>Githubstagram</v-toolbar-title>
+    <v-toolbar-title>Gitstagram</v-toolbar-title>
     </v-toolbar>
     <v-content class="mt-5">
       <v-container>
@@ -18,7 +18,9 @@
       </v-container>
     </v-content>
     <v-footer :fixed="fixed" app>
-      <span>&copy; 2017</span>
+      <v-layout justify-center row>
+        <span>Made with <v-icon small color="pink">favorite</v-icon> by <a href="http://hamit.work" target="_blank">@hamittokay</a></span>
+      </v-layout>
     </v-footer>
   </v-app>
 </template>
