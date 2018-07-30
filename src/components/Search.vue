@@ -63,6 +63,7 @@ export default {
           }
         })
         .catch(err => {
+          this.user = null
           this.message = {
               text: `There is no user found with the username : ${this.search}`,
               type: 'error',
